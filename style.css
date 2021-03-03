@@ -1,0 +1,46 @@
+
+
+/*
+my css
+ .row{
+    display:flex;
+    height:800px;
+    align-items:center;
+}
+
+.card{
+    display:flex;
+    flex-direction:column;
+    padding:1rem;
+    margin: 1rem;
+    border: 2px solid black;
+
+}
+
+.card+.bottom{
+align-self:flex-end;
+} */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    /* height: 800px; */
+    /* align-items: center; */
+}
+
+.card {
+    display: flex;
+    /* justify-content: space-between; */
+    flex-direction: column;
+    padding: 1rem;
+    border: 1px solid black;
+    margin: 1rem;
+    max-width: 200px;
+}
+
+.card > p {
+    flex-grow: 1;
+}
+
+.card + .bottom {
+    align-self: flex-end;
+}
