@@ -1,0 +1,13 @@
+
+.container{
+display: flex;
+font-size: xxx-large;
+font-weight: 700;
+padding:1em;
+}
+
+.superscript{
+    position:relative;
+    font-size:medium;
+    bottom:1.5em;
+}
