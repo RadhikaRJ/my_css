@@ -6,8 +6,9 @@ ul>li>a{
 }
 
 .nav {
-    grid-area: nav;
+    grid-area: nv;
     border-right:1px solid gray;
+    width:fit-content;
   }
   
   .doc {
@@ -15,6 +16,8 @@ ul>li>a{
   }
   
   .aside {
+      border-left:1px solid gray;
+      padding-left:2em;
     grid-area: aside;
   }
   
@@ -22,6 +25,7 @@ ul>li>a{
     grid-area: footer;
     text-align: center;
     border-top:1px solid gray;
+    border-bottom:1px solid gray;
   }
   
   .layout {
@@ -34,10 +38,15 @@ ul>li>a{
   
   
   .doc-site-layout {
-  grid-template-areas:
-  "header header header header"
-  "nav doc doc doc"
-  
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows:auto auto auto auto auto;
+    grid-template-areas:
+    "header header header header header"
+    "nv doc doc aside aside"
+    "nv doc doc aside aside"
+    "nv doc doc aside aside"
+    "footer footer footer footer footer"
   }
   
   .header12 {
@@ -46,22 +55,9 @@ ul>li>a{
     border-bottom:1px solid gray;
   }
 
-  .card {
-    display: flex;
-    /* justify-content: space-between; */
-    flex-direction: column;
-    padding: 1rem;
-    border: 1px solid black;
-    margin: 1rem;
-    max-width: 200px;
-}
-
-.overlay-text{
-    position:absolute;
-    /* use top bottom left right as per requirement */
-    width:150px;
-}
+ 
 .card-remove-button-container{
+    grid-area:doc;
     /* Change the width & remove card-showSimilat-section div if not needed */
 /* margin:0 auto;
 width:675px; */
