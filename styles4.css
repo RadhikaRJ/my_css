@@ -1,0 +1,33 @@
+.main-container{
+    padding:1em;
+    border:2px solid black;
+    height:500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container{
+display: flex;
+font-size:large;
+font-weight: 700;
+
+}
+
+.superscript{
+    position:relative;
+    font-size:small;
+    bottom:1em;
+}
+
+.notification{
+   
+    border: 1px solid black;
+}
+
+.notification>p{
+    font-weight: 700;
+    padding:0.25rem;
+    font-size: larger;
+    text-align: center;
+}
