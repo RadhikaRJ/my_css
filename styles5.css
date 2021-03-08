@@ -18,18 +18,3 @@ ul>li>a{
     padding:0.5em;
     border-radius: 1em;;
 }
-.main-container{
-   border:2px solid blue;
-    display: flex;
-    align-items:center;
-    height:500px;
-}
-
-.child-container{
-   border: 2px solid black;
-}
-
-.third-child{
-    
-    align-self:flex-end;
-}
