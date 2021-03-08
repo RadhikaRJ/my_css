@@ -1,0 +1,115 @@
+
+
+
+ul>li>a{
+    text-decoration: none;
+}
+
+.nav {
+    grid-area: nav;
+    border-right:1px solid gray;
+  }
+  
+  .doc {
+   grid-area: doc;
+  }
+  
+  .aside {
+    grid-area: aside;
+  }
+  
+  .footer22 {
+    grid-area: footer;
+    text-align: center;
+    border-top:1px solid gray;
+  }
+  
+  .layout {
+      grid-template-areas: 
+      "nav nav nav"
+      "row row aside"
+      "row row aside"
+      "footer footer footer"
+  }
+  
+  
+  .doc-site-layout {
+  grid-template-areas:
+  "header header header header"
+  "nav doc doc doc"
+  
+  }
+  
+  .header12 {
+      text-align: center;
+    grid-area: header;
+    border-bottom:1px solid gray;
+  }
+
+  .card {
+    display: flex;
+    /* justify-content: space-between; */
+    flex-direction: column;
+    padding: 1rem;
+    border: 1px solid black;
+    margin: 1rem;
+    max-width: 200px;
+}
+
+.overlay-text{
+    position:absolute;
+    /* use top bottom left right as per requirement */
+    width:150px;
+}
+.card-remove-button-container{
+    /* Change the width & remove card-showSimilat-section div if not needed */
+/* margin:0 auto;
+width:675px; */
+}
+
+.card{
+    /*  set width roughly same as width of image */
+    width:120px;
+    border: 1px solid gray;
+    padding:0.5em 2em 0.5em 2em;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.card-content{
+
+    text-align: center;
+}
+
+.card-remove-btn{
+
+    position:relative;
+    float:right;
+    left:1em;
+    width:fit-content;
+    border-radius:100%;
+    background-color: transparent;
+    font-size:18px;
+    border: 1px solid lightgray;
+    color:gray;
+    margin:0.25em;
+    
+}
+
+.card-showSimilar-section{
+    width:120px;
+    border:1px solid gray;
+    padding:0 2em 0 2em;
+    
+}
+
+.card-showsimilar-btn{
+background-color: transparent;
+width: inherit;
+border:none;
+font-size:small;
+padding:0.25em;
+color:rgb(190, 6, 37);
+font-weight: 600;
+}

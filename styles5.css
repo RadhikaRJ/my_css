@@ -28,10 +28,14 @@ ul>li>a{
    background-color: snow;
     border: 2px solid green;
     position:fixed;
-    top:6em;
-    left:20em;
+    top:4em;
+    /* left:20em; */
     display:none;
-    
+    width:100%;
+    left:0;
+    right:1em;
+    background-color: rgb(0,0,0);
+    background-color: rgb(0,0,0,0.4);
     /*
     uncomment below styling for full page modal-----
     top:0;
