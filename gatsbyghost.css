@@ -1,0 +1,76 @@
+
+header{
+    background-image:url("https://static.ghost.org/v1.0.0/images/blog-cover.jpg") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:360px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.header-icons{
+    display:flex;
+    /* border: 2px solid green; */
+    justify-content: space-between;
+    position: relative;
+    float:top;
+}
+.page-heading-content{
+    position: relative;
+    
+}
+.s-icons,.logo-icons{
+        margin:1em 0.5em 1em 0.5em;
+        padding:0;
+}
+.s-icons{
+    height: 20px;
+    /* border: 2px solid white; */
+    
+    
+}
+.logo-icons{
+    height:25px;  
+}
+
+.page-heading,.page-heading-tagline{
+    color:white;
+    text-align: center;
+}
+.page-heading{
+margin-bottom:0;
+}
+.page-heading-tagline{
+  margin-top:0.25em;
+    padding-top:0;
+    font-size:25px;
+    color:#aaa;
+}
+nav{
+    color:#aaa;
+}
+nav>ul{
+    display:flex;
+    padding:0.5em;
+    justify-content: space-between;
+    
+}
+nav>ul>div{
+    display:flex;
+}
+nav>ul>div>li{
+    padding:1em;
+    list-style-type: none;
+}
+nav>ul>div>li>a:hover{
+    color:white;
+}
+.link-btn-design{
+    border:1px solid #aaa;
+    margin-top:0;
+    margin-bottom:0;
+    padding:0.25em 0.5em 0.25em 0.5em;
+    border-radius:0.5em;
+    font-size:15px;
+}
+ 
