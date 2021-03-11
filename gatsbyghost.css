@@ -1,8 +1,11 @@
-
 body{
     margin:0 auto;
+}
+.main-container{
+
     max-width: 675px;;
 }
+
 header{
     background-image:url("https://static.ghost.org/v1.0.0/images/blog-cover.jpg") ;
     background-position: center;
@@ -148,4 +151,33 @@ footer{
     list-style-type: none;
     padding:0 0.5em 0 0.5em;
     
+}
+
+@media (min-width:676px){
+ .main-container{     
+    min-width:1020px;
+    margin:0 auto;
+ }
+ 
+ .post-container{      
+    flex-direction: row;
+    flex-wrap:wrap;   
+    justify-content: flex-start;
+    
+ }
+ .post{
+     width:320px;
+     height:450px;
+     display:flex;
+     flex-direction:column;
+     
+ }
+
+ .post-description{
+     flex-grow: 1;
+     /* border: 2px solid green; */
+ }
+ .first-post>h3{
+     margin-top:3em;
+ }
 }
