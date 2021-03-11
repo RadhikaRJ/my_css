@@ -1,4 +1,8 @@
 
+body{
+    margin:0 auto;
+    max-width: 675px;;
+}
 header{
     background-image:url("https://static.ghost.org/v1.0.0/images/blog-cover.jpg") ;
     background-position: center;
@@ -73,4 +77,75 @@ nav>ul>div>li>a:hover{
     border-radius:0.5em;
     font-size:15px;
 }
+ main{
+     padding:0.75em 0em 0.75em 0;
+    
+ }
  
+ .post-container{
+     display:flex;     
+     flex-direction: column;
+     flex-wrap:wrap;
+    
+ }
+ .post{
+    padding:0.5em; 
+   
+ }
+.post-image{
+  width:100%;
+  height:auto;
+  
+}
+.started-label{
+color:rgb(92, 92, 92);;
+margin-bottom:0;
+padding-bottom:0;
+}
+.post>h3{
+padding-top:0;
+margin-top:0.25em;
+}
+.post-description{
+    width: inherit;
+}
+.post-ghost-icon-readtime{
+    display:flex;
+    justify-content: space-between;
+    color:rgb(92, 92, 92);
+    font-weight:100;
+}
+.ghost-icon{
+    height:25px;
+    border-radius:50%;
+}
+.logo-ghost-label{
+    display:flex;
+   
+}
+.ghost-label,.post-reading-time{
+    padding-left:0.5em;
+   
+}
+
+footer{
+    background-color: black;
+    color:#aaa;
+    padding:2em;
+    
+}
+.footer-content{
+    display:flex;
+    justify-content: space-between;
+    /* border:1px solid white; */
+}
+
+.footer-nav-links{
+    display:flex;
+}
+.footer-nav-links>li{
+    display:flex;
+    list-style-type: none;
+    padding:0 0.5em 0 0.5em;
+    
+}
